@@ -38,10 +38,10 @@
 	</div>
 </div>
 
-{#if isAnimationEnded}
+<!-- {#if isAnimationEnded}
 	<h1 style="color: white;">ENDED ANIMATION</h1>
 	<slot />
-{/if}
+{/if} -->
 
 <style>
 	/* Styles */
