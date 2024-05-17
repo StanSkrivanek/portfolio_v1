@@ -3,45 +3,44 @@
 @tailwind utilities;
 
 @layer base {
+	:root {
+		--main-background: #100f58;
+		--main-light: #ffffff;
+		--white-opaque: #ffffff4b;
+		--red: #ff4d6a;
+		--teal: hsl(153, 82%, 70%);
+		--orange: #f77b58;
+		/* --teal: #74cedb; */
+		--blue: #6b9ef5;
+		--blue-rich: #6d8bf7;
+		--pink: rgb(245, 63, 151);
+		--violet: #9462eb;
+		--sans-light: 300;
+		--sans-regular: 400;
+		--sans-bold: 700;
+		--sans-black: 900;
+		/* text sizes */
+		--text: clamp(0.65rem, 0.65rem + 1vw, 1.2rem);
+		--text-xs: 10px;
+		--big-title: clamp(2.7rem, 1rem + 7vw, 10rem);
+		--large-text: clamp(1.5rem, 1rem + 2vw, 3rem);
+		--large-line-height: 1;
+		--capital-text: 24px;
+		--small-text: 18px;
+		--mini-text: 10px;
+	}
 
-  :root {
-    --main-background: #100f58;
-    --main-light: #ffffff;
-    --white-opaque: #ffffff4b;
-    --red: #ff4d6a;
-    --teal: hsl(153, 82%, 70%);
-    --orange: #f77b58;
-    /* --teal: #74cedb; */
-    --blue: #6b9ef5;
-    --blue-rich: #6d8bf7;
-    --pink: rgb(245, 63, 151);
-    --violet: #9462eb;
-    --sans-light: 300;
-    --sans-regular: 400;
-    --sans-bold: 700;
-    --sans-black: 900;
-    /* text sizes */
-    --text: clamp(0.65rem, 0.65rem + 1vw, 1.2rem);
-    --text-xs: 10px;
-    --big-title: clamp(2.7rem, 1rem + 7vw, 10rem);
-    --large-text: clamp(1.5rem, 1rem + 2vw, 3rem);
-    --large-line-height: 1;
-    --capital-text: 24px;
-    --small-text: 18px;
-    --mini-text: 10px;
-  }
-
-  body {
-    @apply font-sansInter;
-    @apply bg-black text-white;
-    padding: 0 16px;
-    max-width: 1680px;
-    margin: 0 auto;
-    font-size: var(--text);
-    color: var(--main-light);
-    font-weight: var(--sans-regular);
-  }
-
+	body {
+		@apply font-sansInter;
+		@apply bg-black text-white;
+		position: relative;
+		padding: 0 16px;
+		max-width: 1680px;
+		margin: 0 auto;
+		font-size: var(--text);
+		color: var(--main-light);
+		font-weight: var(--sans-regular);
+	}
 
 	/* font */
 	h1 {

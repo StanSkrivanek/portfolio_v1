@@ -1,10 +1,14 @@
 <script>
-  // @ts-ignore
-  import ArrowRight from "$lib/components/icons/ArrowRight.svelte";
-  export let data;
-  const projects = data.projects;
-
+	// @ts-ignore
+	import ArrowRight from '$lib/components/icons/ArrowRight.svelte';
+	export let data;
+	const projects = data.projects;
 </script>
+
+<svelte:head>
+	<title>Projects</title>
+	<meta name="description" content="random projects made with Svelte or Webflow" />
+</svelte:head>
 
 <!-- svelte-ignore non-top-level-reactive-declaration -->
 <main class=" md:px-8">
@@ -12,35 +16,28 @@
 		<span class="gradient-2">Projects.</span>
 	</h2>
 
-
-  {#if projects && projects.length}
-    <div class="projects-grid md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-      {#each projects as project, i}
-        <div class="card relative mb-4 md:mb-0">
-          <div class="h-full w-full">
-            <img
-              src={project.thumbnail}
-              alt={project.title}
-              class="h-full w-full object-cover" />
-          </div>
-          <div class="btn-link flex absolute bottom-0 right-0 bg-black rounded-ss-md hover:bg-emerald-500 duration-300">
-            <a
-              href="/projects/{project.slug}"
-              class="p-4">
-              <div class="w-full h-full">
-                <ArrowRight
-                  width={32}
-                  height={32} />
-              </div>
-            </a>
-          </div>
-        </div>
-      {/each}
-    </div>
-  {:else}
-    <p>No projects found.</p>
-  {/if}
-
+	{#if projects && projects.length}
+		<div class="projects-grid md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+			{#each projects as project, i}
+				<div class="card relative mb-4 md:mb-0">
+					<div class="h-full w-full">
+						<img src={project.thumbnail} alt={project.title} class="h-full w-full object-cover" />
+					</div>
+					<div
+						class="btn-link flex absolute bottom-0 right-0 bg-black rounded-ss-md hover:bg-emerald-500 duration-300"
+					>
+						<a href="/projects/{project.slug}" class="p-4">
+							<div class="w-full h-full">
+								<ArrowRight width={32} height={32} />
+							</div>
+						</a>
+					</div>
+				</div>
+			{/each}
+		</div>
+	{:else}
+		<p>No projects found.</p>
+	{/if}
 </main>
 
 <style>
