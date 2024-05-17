@@ -35,21 +35,6 @@
 			As Curio traversed the vast expanse of the universe, he felt a sense of adventure. After all, in the zany world of
 			Cyberspace, the journey is often as delightful as the destination.
 		</p>
-
-		<!-- <p>Click the link below to get started!</p> -->
-		<!-- <p class="end">The end</p> -->
-		
-		<!-- <a
-			href="https://curioscyberadventure.netlify.app/"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="border p-4 font-semibold uppercase tracking-wider text-white hover:border-green-300 hover:text-green-300"
-			>
-			See live
-		</a> -->
-		
-		
-		<!-- <img src="images/ethereal-humanoid.webp" alt="ethereal humanoid"> -->
 	</div>
 </div>
 
@@ -62,7 +47,6 @@
 	/* Styles */
 	.wrapper {
 		max-height: 82vh;
-		/* animation: scroll 30s linear forwards; */
 		animation: scroll 90s linear forwards;
 	}
 
