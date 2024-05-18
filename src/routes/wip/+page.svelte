@@ -109,7 +109,7 @@
 			transform: perspective(250px) rotateX(20deg) translateY(680px);
 			opacity: 1;
 		}
-		80% {
+		60% {
 			opacity: 1;
 		}
 		100% {
