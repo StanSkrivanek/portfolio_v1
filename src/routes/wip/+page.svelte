@@ -54,7 +54,7 @@
 	/* Styles */
 	.wrapper {
 		max-height: 82vh;
-		animation: scroll 10s linear forwards;
+		animation: scroll 60s linear forwards;
 	}
 
 	.text-scroll {
