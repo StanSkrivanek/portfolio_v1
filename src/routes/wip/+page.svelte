@@ -6,6 +6,7 @@
 	onMount(() => {
 		document.title = "Curio's Cyber Adventure";
 		const scrollingWrapper = document.querySelector('.wrapper');
+
 		scrollingWrapper?.addEventListener('animationend', () => {
 			isAnimationEnded = true;
 		});
@@ -53,7 +54,7 @@
 	/* Styles */
 	.wrapper {
 		max-height: 82vh;
-		animation: scroll 50s linear forwards;
+		animation: scroll 10s linear forwards;
 	}
 
 	.text-scroll {
@@ -113,11 +114,11 @@
 			opacity: 1;
 		}
 		100% {
-			transform: perspective(250px) rotateX(21deg) translateY(-2800px);
+			transform: perspective(250px) rotateX(21deg) translateY(calc(-1900px - 100vw / 2));
 			opacity: 0;
 		}
 	}
-	
+
 	@keyframes facing {
 		0% {
 			transform: perspective(350px) rotateX(20deg) translateY(-150px);
@@ -131,22 +132,4 @@
 		}
 	}
 
-
-	/* Media Queries */
-	@media (max-width: 768px) {
-		@keyframes scroll {
-		0% {
-			transform: perspective(250px) rotateX(20deg) translateY(680px);
-			opacity: 1;
-		}
-		75% {
-			opacity: 1;
-		}
-		100% {
-			transform: perspective(250px) rotateX(21deg) translateY(-1600px);
-			opacity: 0;
-		}
-	}
-
-	}
 </style>
