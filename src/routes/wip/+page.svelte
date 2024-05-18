@@ -113,7 +113,7 @@
 			opacity: 1;
 		}
 		100% {
-			transform: perspective(250px) rotateX(21deg) translateY(-3400px);
+			transform: perspective(250px) rotateX(21deg) translateY(-2400px);
 			opacity: 0;
 		}
 	}
